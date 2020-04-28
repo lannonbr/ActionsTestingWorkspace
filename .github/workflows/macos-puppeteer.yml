@@ -13,3 +13,10 @@ jobs:
         width: 1280
         height: 720
         fullPage: true
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: Screenshot
+        # Directory containing files to upload
+        path: $GITHUB_WORKSPACE/screenshots
