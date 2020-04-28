@@ -1,0 +1,15 @@
+name: MacOS Puppeteer Screenshot test
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: lannonbr/puppeteer-screenshot-action@add-macos
+      with:
+        url: 'https://github.com/lannonbr/'
+        width: 1280
+        height: 720
+        fullPage: true
