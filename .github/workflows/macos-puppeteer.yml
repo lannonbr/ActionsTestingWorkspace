@@ -19,4 +19,4 @@ jobs:
         # Artifact name
         name: Screenshot
         # Directory containing files to upload
-        path: $GITHUB_WORKSPACE/screenshots
+        path: screenshots
