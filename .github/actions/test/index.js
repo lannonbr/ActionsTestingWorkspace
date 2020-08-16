@@ -1,6 +1,6 @@
 const core = require("@actions/core");
 
-console.log(__dirname);
+console.log(process.env.GITHUB_WORKSPACE);
 console.log(core.getInput("filepath"));
 
 // const cssPath = path.resolve(
