@@ -1,5 +1,10 @@
 const core = require("@actions/core");
 
+// const fs = require("fs");
+
+// const f = fs.readFileSync(process.env.GITHUB_EVENT_PATH, "utf-8");
+// console.log(f);
+
 console.log(process.env.GITHUB_WORKSPACE);
 console.log(core.getInput("filepath"));
 
